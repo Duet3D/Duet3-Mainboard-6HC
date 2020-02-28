@@ -1,0 +1,1 @@
+Note this version of the Duet 3 Mainboard is unsupported
