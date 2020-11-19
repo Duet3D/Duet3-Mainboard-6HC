@@ -1,0 +1,27 @@
+DUET 3 LICENSE
+
+Copyright Duet3D 2020.
+
+This source describes Open Hardware and is licensed under the "CERN-OHL-S v2" or any later version plus the "Additinal Duet3D Licence Terms" outlined below, including any future updates.
+
+You may redistribute and modify this source and make products using it under the terms of the CERN-OHL-S v2 (https://ohwr.org/cern_ohl_s_v2.txt).
+
+This source is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN-OHL-S v2 for applicable conditions.
+
+Source location: https://github.com/Duet3D
+
+As per CERN-OHL-S v2 section 4, should You produce hardware based on this source, You must where practicable maintain the Source Location visible on the PCB of the products you make using this source.
+
+https://ohwr.org/cern_ohl_s_v2.txt
+
+
+Additional Duet3D Terms
+a. Attribution:
+  Any reproductions or modifications of the hardware must contain the following attribution on the PCB silkscreen and packaging:
+  "Based on the design by Duet3D, see www.duet3d.com for the original product. This reproduction/modification is not endorsed or supported in any way by Duet3D".
+b. Logos:
+  No reproduction or modification of the Duet 3 products may contain the Think3dPrint3d, Escher3d or Duet3D logos.
+
+
+
+TEXT OF THE CERN OPEN HARDWARE LICENSE is available here https://ohwr.org/cern_ohl_s_v2.txt
