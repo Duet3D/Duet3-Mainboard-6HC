@@ -1,0 +1,2166 @@
+EESchema Schematic File Version 4
+LIBS:Duet3_MB-cache
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 4 8
+Title "Duet 3 Main Board"
+Date "2020-03-30"
+Rev "1.01"
+Comp "Duet3D"
+Comment1 "(c) Duet3D"
+Comment2 "See License here https://github.com/Duet3D/Duet3-Mainboard-6HC/blob/master/LICENSE"
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 9265 6830 2    60   Input ~ 0
+V_FUSED
+Text GLabel 8665 6830 0    60   Input ~ 0
+V_IN
+$Comp
+L Device:Fuse F1
+U 1 1 5B3D1030
+P 8965 6830
+F 0 "F1" V 8885 6840 50  0000 C CNN
+F 1 "VIN_FUSE" V 9115 6830 50  0000 C CNN
+F 2 "complib:MCCQ-122-minibladefuseholder" V 8895 6830 50  0001 C CNN
+F 3 "~" H 8965 6830 50  0001 C CNN
+F 4 "." H 8965 6830 50  0001 C CNN "Part Number"
+	1    8965 6830
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8665 6830 8815 6830
+Wire Wire Line
+	9115 6830 9265 6830
+Text Notes 8400 6425 0    60   ~ 0
+Mini Blade Fuses
+$Comp
+L Device:LED D6
+U 1 1 5B7E3EA2
+P 8050 7575
+F 0 "D6" H 8050 7675 50  0000 C CNN
+F 1 "3.3V" H 8050 7475 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 8050 7575 60  0001 C CNN
+F 3 "" H 8050 7575 60  0001 C CNN
+F 4 "150060VS75000  or equivalent Green" H 8050 7575 50  0001 C CNN "Part Number"
+	1    8050 7575
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 5B7E3EA9
+P 7600 7575
+F 0 "D5" H 7600 7675 50  0000 C CNN
+F 1 "5V+" H 7700 7425 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 7600 7575 60  0001 C CNN
+F 3 "" H 7600 7575 60  0001 C CNN
+F 4 "150060RS75000 or equivalent Red" H 7600 7575 50  0001 C CNN "Part Number"
+	1    7600 7575
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Duet3:GND #PWR038
+U 1 1 5B7E3EB0
+P 7350 8075
+F 0 "#PWR038" H 7350 8075 30  0001 C CNN
+F 1 "GND" H 7350 8005 30  0001 C CNN
+F 2 "" H 7350 8075 60  0001 C CNN
+F 3 "" H 7350 8075 60  0001 C CNN
+	1    7350 8075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5B7E3EB6
+P 7050 7575
+F 0 "D4" H 7050 7675 50  0000 C CNN
+F 1 "V_FUSED" H 7150 7475 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 7050 7575 60  0001 C CNN
+F 3 "" H 7050 7575 60  0001 C CNN
+F 4 "150060BS75000  or equivalent Blue" H 7050 7575 50  0001 C CNN "Part Number"
+	1    7050 7575
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Duet3:AP7361C-33E-13-Duet2 U4
+U 1 1 5B7E3ED9
+P 2025 7025
+F 0 "U4" H 2025 7325 60  0000 C CNN
+F 1 "AP7361C-33E-13" H 2075 6775 60  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 2025 7025 60  0001 C CNN
+F 3 "" H 2025 7025 60  0001 C CNN
+F 4 "." H 2025 7025 50  0001 C CNN "Part Number"
+	1    2025 7025
+	1    0    0    -1  
+$EndComp
+Text Notes 775  6475 0    60   ~ 0
+5V Input, 3.3V  Output for internal use only\nLow Drop-Out Linear Regulator
+Text GLabel 3625 6875 2    60   Input ~ 0
++3.3V
+Text GLabel 1225 6875 0    60   Input ~ 0
+5V_INT
+$Comp
+L Duet3:GND #PWR036
+U 1 1 5B7E3EE3
+P 2025 7625
+F 0 "#PWR036" H 2025 7625 30  0001 C CNN
+F 1 "GND" H 2025 7555 30  0001 C CNN
+F 2 "" H 2025 7625 60  0001 C CNN
+F 3 "" H 2025 7625 60  0001 C CNN
+	1    2025 7625
+	1    0    0    -1  
+$EndComp
+Text Notes 6325 6450 0    60   ~ 0
+Power LEDs
+Text GLabel 8050 6875 1    60   Input ~ 0
++3.3V
+Text GLabel 7600 6925 1    60   Input ~ 0
+5V_INT
+Text Notes 6850 7700 1    60   ~ 0
+Blue
+Text Notes 7375 7725 1    60   ~ 0
+Red
+Text Notes 7900 7725 1    60   ~ 0
+Green
+$Comp
+L Duet3:R_SMALL R16
+U 1 1 5B7E3F15
+P 7050 7175
+F 0 "R16" V 7125 7183 50  0000 C CNN
+F 1 "10K" V 6982 7187 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Wbry" H 7050 7175 60  0001 C CNN
+F 3 "~" H 7050 7175 60  0000 C CNN
+F 4 "" H 7050 7175 50  0001 C CNN "Part Number"
+F 5 "0.1W is fine" H 7050 7175 50  0001 C CNN "Rating"
+	1    7050 7175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:R_SMALL R17
+U 1 1 5B7E3F1C
+P 7600 7175
+F 0 "R17" V 7675 7183 50  0000 C CNN
+F 1 "2K2" V 7532 7187 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Wbry" H 7600 7175 60  0001 C CNN
+F 3 "~" H 7600 7175 60  0000 C CNN
+F 4 "150060RS75000 or equivalent" H 7600 7175 50  0001 C CNN "Part Number"
+	1    7600 7175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:R_SMALL R18
+U 1 1 5B7E3F23
+P 8050 7175
+F 0 "R18" V 8125 7183 50  0000 C CNN
+F 1 "180R" V 7982 7187 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Wbry" H 8050 7175 60  0001 C CNN
+F 3 "~" H 8050 7175 60  0000 C CNN
+F 4 "." H 8050 7175 50  0001 C CNN "Part Number"
+	1    8050 7175
+	1    0    0    -1  
+$EndComp
+Connection ~ 3125 6875
+Wire Wire Line
+	2025 7625 2025 7500
+Wire Wire Line
+	3125 6875 3125 7100
+Wire Wire Line
+	1225 6875 1375 6875
+Wire Wire Line
+	2425 6875 3125 6875
+Wire Wire Line
+	7050 6825 7050 6975
+Wire Wire Line
+	7600 6925 7600 6975
+Wire Wire Line
+	8050 6875 8050 6975
+Wire Wire Line
+	7050 7825 7350 7825
+Wire Wire Line
+	7350 7825 7350 8075
+Connection ~ 7350 7825
+Wire Wire Line
+	7050 7425 7050 7375
+Wire Wire Line
+	7600 7425 7600 7375
+Wire Wire Line
+	8050 7425 8050 7375
+Wire Wire Line
+	8050 7825 8050 7725
+Wire Wire Line
+	7600 7825 7600 7725
+Wire Wire Line
+	7050 7825 7050 7725
+Wire Wire Line
+	1925 7375 1925 7500
+Wire Wire Line
+	1925 7500 2025 7500
+Connection ~ 2025 7500
+Wire Wire Line
+	3125 6875 3625 6875
+Wire Wire Line
+	2025 7500 2025 7375
+$Comp
+L Duet3:C_SMALL C43
+U 1 1 5B14D177
+P 3125 7200
+F 0 "C43" H 3150 7275 50  0000 L CNN
+F 1 "10u" H 3150 7100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3125 7200 60  0001 C CNN
+F 3 "GRM31CR6YA106KA12L" H 3125 7200 60  0001 C CNN
+F 4 "." H 3125 7200 50  0001 C CNN "Part Number"
+	1    3125 7200
+	1    0    0    -1  
+$EndComp
+Text GLabel 7050 6825 1    60   Input ~ 0
+V_FUSED
+Text Notes 9750 6875 0    60   ~ 0
+7.5A/10A\n
+$Comp
+L Duet3:CDBA540 D?
+U 1 1 5FE48491
+P 1500 1100
+AR Path="/5FE30E62/5FE48491" Ref="D?"  Part="1" 
+AR Path="/50577A22/5FE48491" Ref="D3"  Part="1" 
+F 0 "D3" H 1500 1200 40  0000 C CNN
+F 1 "CDBA540-HF" H 1500 1000 40  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 1500 1100 60  0001 C CNN
+F 3 "https://www.digikey.co.uk/product-detail/en/comchip-technology/CDBA540-HF/641-1707-2-ND/5226175" H 1500 1100 60  0001 C CNN
+F 4 "CDBA540-HF" H 1500 1100 50  0001 C CNN "Part Number"
+	1    1500 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:CDBA540 D?
+U 1 1 5FE48498
+P 9700 2225
+AR Path="/5FE30E62/5FE48498" Ref="D?"  Part="1" 
+AR Path="/50577A22/5FE48498" Ref="D10"  Part="1" 
+F 0 "D10" H 9700 2325 40  0000 C CNN
+F 1 "3A 40V" H 9675 2125 40  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 9700 2225 60  0001 C CNN
+F 3 "" H 9700 2225 60  0001 C CNN
+F 4 "ACDBA340-HF or similar" H 9700 2225 50  0001 C CNN "Part Number"
+	1    9700 2225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Duet3:C_POL C?
+U 1 1 5FE4849F
+P 2000 1400
+AR Path="/5FE30E62/5FE4849F" Ref="C?"  Part="1" 
+AR Path="/50577A22/5FE4849F" Ref="C138"  Part="1" 
+F 0 "C138" H 2025 1475 50  0000 L CNN
+F 1 "100u 40V" V 1900 950 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 2000 1400 60  0001 C CNN
+F 3 "" H 2000 1400 60  0000 C CNN
+F 4 "." H 2000 1400 50  0001 C CNN "Part Number"
+	1    2000 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5FE484A7
+P 1775 1400
+AR Path="/5FE30E62/5FE484A7" Ref="C?"  Part="1" 
+AR Path="/50577A22/5FE484A7" Ref="C137"  Part="1" 
+F 0 "C137" H 1800 1475 50  0000 L CNN
+F 1 "10u 40V" V 1675 1100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 1775 1400 60  0001 C CNN
+F 3 "~" H 1775 1400 60  0000 C CNN
+F 4 "~" H 1575 1200 60  0000 C CNN "Voltage"
+F 5 "." H 1775 1400 50  0001 C CNN "Part Number"
+	1    1775 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5FE484AE
+P 5300 1500
+AR Path="/5FE30E62/5FE484AE" Ref="C?"  Part="1" 
+AR Path="/50577A22/5FE484AE" Ref="C145"  Part="1" 
+F 0 "C145" H 5325 1575 50  0000 L CNN
+F 1 "0u1" H 5300 1425 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Wbry" H 5300 1500 60  0001 C CNN
+F 3 "~" H 5300 1500 60  0000 C CNN
+F 4 "." H 5300 1500 50  0001 C CNN "Part Number"
+	1    5300 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5FE484B5
+P 7000 1800
+AR Path="/5FE30E62/5FE484B5" Ref="C?"  Part="1" 
+AR Path="/50577A22/5FE484B5" Ref="C147"  Part="1" 
+F 0 "C147" H 7025 1875 50  0000 L CNN
+F 1 "10u 35V" V 7075 1400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7000 1800 60  0001 C CNN
+F 3 "GRM31CR6YA106KA12L" H 7000 1800 60  0001 C CNN
+F 4 "." H 7000 1800 50  0001 C CNN "Part Number"
+	1    7000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5FE484BC
+P 7250 1800
+AR Path="/5FE30E62/5FE484BC" Ref="C?"  Part="1" 
+AR Path="/50577A22/5FE484BC" Ref="C148"  Part="1" 
+F 0 "C148" H 7275 1875 50  0000 L CNN
+F 1 "10u 35V" V 7300 1400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7250 1800 60  0001 C CNN
+F 3 "GRM31CR6YA106KA12L" H 7250 1800 60  0001 C CNN
+F 4 "." H 7250 1800 50  0001 C CNN "Part Number"
+	1    7250 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5FE484C3
+P 3050 1425
+AR Path="/5FE30E62/5FE484C3" Ref="C?"  Part="1" 
+AR Path="/50577A22/5FE484C3" Ref="C141"  Part="1" 
+F 0 "C141" H 2875 1525 50  0000 L CNN
+F 1 "10u 40V" V 3000 950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3050 1425 60  0001 C CNN
+F 3 "GRM31CR6YA106KA12L" H 3050 1425 60  0001 C CNN
+F 4 "." H 3050 1425 50  0001 C CNN "Part Number"
+	1    3050 1425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:R_SMALL R?
+U 1 1 5FE484CA
+P 950 1550
+AR Path="/5FE30E62/5FE484CA" Ref="R?"  Part="1" 
+AR Path="/50577A22/5FE484CA" Ref="R102"  Part="1" 
+F 0 "R102" V 1025 1558 50  0000 C CNN
+F 1 "60K4" V 882 1562 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Wbry" H 950 1550 60  0001 C CNN
+F 3 "~" H 950 1550 60  0000 C CNN
+F 4 "." H 950 1550 50  0001 C CNN "Part Number"
+	1    950  1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:R_SMALL R?
+U 1 1 5FE484D1
+P 950 2150
+AR Path="/5FE30E62/5FE484D1" Ref="R?"  Part="1" 
+AR Path="/50577A22/5FE484D1" Ref="R103"  Part="1" 
+F 0 "R103" V 1025 2158 50  0000 C CNN
+F 1 "4K7" V 882 2162 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Wbry" H 950 2150 60  0001 C CNN
+F 3 "~" H 950 2150 60  0000 C CNN
+F 4 "." H 950 2150 50  0001 C CNN "Part Number"
+	1    950  2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5FE484D8
+P 1150 2150
+AR Path="/5FE30E62/5FE484D8" Ref="C?"  Part="1" 
+AR Path="/50577A22/5FE484D8" Ref="C136"  Part="1" 
+F 0 "C136" H 1175 2225 50  0000 L CNN
+F 1 "2n2" H 1150 2075 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Wbry" H 1150 2150 60  0001 C CNN
+F 3 "~" H 1150 2150 60  0000 C CNN
+F 4 "." H 1150 2150 50  0001 C CNN "Part Number"
+	1    1150 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:L_MINI L?
+U 1 1 5FE484E0
+P 2275 1100
+AR Path="/5FE30E62/5FE484E0" Ref="L?"  Part="1" 
+AR Path="/50577A22/5FE484E0" Ref="L1"  Part="1" 
+F 0 "L1" H 2200 1050 30  0000 C CNN
+F 1 "1uH" H 2275 1150 22  0000 C CNN
+F 2 "Inductor_SMD:L_1008_2512Metric" H 2275 1100 60  0001 C CNN
+F 3 "SRN2512-1R0M" H 2275 1000 60  0001 C CNN
+F 4 "3.5A" H 2300 1225 60  0001 C CNN "Rating"
+F 5 "." H 2275 1100 50  0001 C CNN "Part Number"
+	1    2275 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Duet3:JUMPER JP?
+U 1 1 5FE484F2
+P 3250 2000
+AR Path="/5FE30E62/5FE484F2" Ref="JP?"  Part="1" 
+AR Path="/50577A22/5FE484F2" Ref="JP1"  Part="1" 
+F 0 "JP1" H 3250 2150 60  0000 C CNN
+F 1 "Int 5V EN" H 3250 1920 40  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3250 2000 60  0001 C CNN
+F 3 "" H 3250 2000 60  0001 C CNN
+F 4 "." H 3250 2000 50  0001 C CNN "Part Number"
+	1    3250 2000
+	0    1    1    0   
+$EndComp
+Text GLabel 9700 2875 2    60   Input ~ 0
+VBUS
+Text Notes 800  850  0    60   ~ 0
+12-32V Input, 5V 4A Output\nPWM Buck Converter\n
+Text GLabel 1200 1100 0    60   Input ~ 0
+V_FUSED
+$Comp
+L Duet3:GND #PWR?
+U 1 1 5FE484FD
+P 1200 3250
+AR Path="/5FE30E62/5FE484FD" Ref="#PWR?"  Part="1" 
+AR Path="/50577A22/5FE484FD" Ref="#PWR041"  Part="1" 
+F 0 "#PWR041" H 1200 3250 30  0001 C CNN
+F 1 "GND" H 1200 3180 30  0001 C CNN
+F 2 "" H 1200 3250 60  0001 C CNN
+F 3 "" H 1200 3250 60  0001 C CNN
+	1    1200 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:L_MINI L?
+U 1 1 5FE48503
+P 6300 1500
+AR Path="/5FE30E62/5FE48503" Ref="L?"  Part="1" 
+AR Path="/50577A22/5FE48503" Ref="L3"  Part="1" 
+F 0 "L3" H 6225 1450 30  0000 C CNN
+F 1 "6.8uH" H 6300 1550 22  0000 C CNN
+F 2 "Inductor_SMD:L_Wuerth_HCC-7443340680" H 6300 1500 60  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/7443340680.pdf" H 6375 1350 60  0001 C CNN
+F 4 "7443340680" H 6300 1500 50  0001 C CNN "Part Number"
+	1    6300 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5FE4850A
+P 4925 1375
+AR Path="/5FE30E62/5FE4850A" Ref="C?"  Part="1" 
+AR Path="/50577A22/5FE4850A" Ref="C144"  Part="1" 
+F 0 "C144" H 4950 1450 50  0000 L CNN
+F 1 "0u1" H 4925 1300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Wbry" H 4925 1375 60  0001 C CNN
+F 3 "~" H 4925 1375 60  0000 C CNN
+F 4 "." H 4925 1375 50  0001 C CNN "Part Number"
+	1    4925 1375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:R_SMALL R?
+U 1 1 5FE48511
+P 3575 2725
+AR Path="/5FE30E62/5FE48511" Ref="R?"  Part="1" 
+AR Path="/50577A22/5FE48511" Ref="R106"  Part="1" 
+F 0 "R106" V 3650 2733 50  0000 C CNN
+F 1 "37K4" V 3507 2737 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Wbry" H 3575 2725 60  0001 C CNN
+F 3 "~" H 3575 2725 60  0000 C CNN
+F 4 "." H 3575 2725 50  0001 C CNN "Part Number"
+	1    3575 2725
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	11325 650  700  650 
+Wire Notes Line
+	11325 650  11325 3550
+Wire Notes Line
+	11325 3550 700  3550
+Wire Notes Line
+	700  3550 700  650 
+Wire Wire Line
+	1200 1100 1250 1100
+Connection ~ 1250 1100
+Wire Wire Line
+	1700 1100 1775 1100
+Wire Wire Line
+	2375 1100 2500 1100
+Wire Wire Line
+	2000 1300 2000 1100
+Wire Wire Line
+	1775 1100 1775 1300
+Connection ~ 1775 1100
+Wire Wire Line
+	950  3100 1200 3100
+Wire Wire Line
+	1200 3100 1200 3250
+Connection ~ 1200 3100
+Connection ~ 1775 3100
+Wire Wire Line
+	4925 1475 4925 1575
+Wire Wire Line
+	6100 1550 6100 1500
+Wire Wire Line
+	7000 1900 7000 3100
+Wire Wire Line
+	7250 3100 7250 1900
+Wire Wire Line
+	2000 1500 2000 1725
+Wire Wire Line
+	1775 1725 2000 1725
+Connection ~ 1775 1725
+Connection ~ 2000 1100
+Wire Wire Line
+	3050 1325 3050 1100
+Connection ~ 3050 1100
+Wire Wire Line
+	3050 1725 3050 1525
+Connection ~ 2000 1725
+Wire Wire Line
+	1775 1500 1775 1725
+Text GLabel 1000 1850 2    60   Input ~ 0
+VIN_POWER_MON
+Wire Wire Line
+	950  1750 950  1850
+Connection ~ 950  1850
+Wire Wire Line
+	950  1350 950  1250
+Wire Wire Line
+	950  1250 1250 1250
+Wire Wire Line
+	1250 1250 1250 1100
+Wire Wire Line
+	950  2350 950  3100
+Wire Wire Line
+	1000 1850 950  1850
+Wire Wire Line
+	950  1950 1150 1950
+Wire Wire Line
+	1150 1950 1150 2050
+Wire Wire Line
+	950  2350 1150 2350
+Wire Wire Line
+	1150 2350 1150 2250
+Wire Wire Line
+	2750 1550 2750 1725
+Connection ~ 2750 1725
+Wire Wire Line
+	2750 1350 2750 1100
+Connection ~ 2750 1100
+$Comp
+L Duet3:CDBA540 D?
+U 1 1 5FE4855B
+P 6100 1750
+AR Path="/5FE30E62/5FE4855B" Ref="D?"  Part="1" 
+AR Path="/50577A22/5FE4855B" Ref="D9"  Part="1" 
+F 0 "D9" H 6100 1850 40  0000 C CNN
+F 1 "CDBA540-HF" H 6100 1650 40  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 6100 1750 60  0001 C CNN
+F 3 "https://www.digikey.co.uk/product-detail/en/comchip-technology/CDBA540-HF/641-1707-2-ND/5226175" H 6100 1750 60  0001 C CNN
+F 4 "CDBA540-HF" H 6100 1750 50  0001 C CNN "Part Number"
+	1    6100 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1250 1100 1300 1100
+Wire Wire Line
+	1775 1100 2000 1100
+Wire Wire Line
+	1200 3100 1775 3100
+Wire Wire Line
+	6100 1500 6200 1500
+Wire Wire Line
+	1775 1725 1775 3100
+Wire Wire Line
+	2000 1100 2175 1100
+Wire Wire Line
+	2000 1725 2500 1725
+Wire Wire Line
+	950  1850 950  1950
+Wire Wire Line
+	2750 1725 3050 1725
+Wire Wire Line
+	2750 1100 3050 1100
+Connection ~ 950  1950
+Connection ~ 950  2350
+$Comp
+L Duet3:AOZ1284-Converter_DCDC U?
+U 1 1 5FE48570
+P 4925 2225
+AR Path="/5FE30E62/5FE48570" Ref="U?"  Part="1" 
+AR Path="/50577A22/5FE48570" Ref="U10"  Part="1" 
+F 0 "U10" H 4925 1811 39  0000 C CNN
+F 1 "AOZ1284" H 4925 1736 39  0000 C CNN
+F 2 "complib:SO8_EP1_ThermalVias_LargeCopper" H 4925 2025 39  0001 C CNN
+F 3 "http://aosmd.com/res/data_sheets/AOZ1284PI.pdf" H 4925 2025 39  0001 C CNN
+F 4 "." H 4925 2225 50  0001 C CNN "Part Number"
+	1    4925 2225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5FE48577
+P 3800 2475
+AR Path="/5FE30E62/5FE48577" Ref="C?"  Part="1" 
+AR Path="/50577A22/5FE48577" Ref="C142"  Part="1" 
+F 0 "C142" V 3925 2475 50  0000 L CNN
+F 1 "1n" V 3725 2325 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Wbry" H 3800 2475 60  0001 C CNN
+F 3 "~" H 3800 2475 60  0000 C CNN
+F 4 "." H 3800 2475 50  0001 C CNN "Part Number"
+	1    3800 2475
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4025 2475 3900 2475
+Wire Wire Line
+	3700 2475 3575 2475
+Wire Wire Line
+	3575 2475 3575 2525
+Wire Wire Line
+	3575 2925 3575 3100
+Connection ~ 3575 3100
+Wire Wire Line
+	3050 1100 3250 1100
+$Comp
+L Duet3:R_SMALL R?
+U 1 1 5FE48584
+P 3700 2225
+AR Path="/5FE30E62/5FE48584" Ref="R?"  Part="1" 
+AR Path="/50577A22/5FE48584" Ref="R107"  Part="1" 
+F 0 "R107" V 3775 2233 50  0000 C CNN
+F 1 "100K" V 3632 2237 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Wbry" H 3700 2225 60  0001 C CNN
+F 3 "~" H 3700 2225 60  0000 C CNN
+F 4 "." H 3700 2225 50  0001 C CNN "Part Number"
+	1    3700 2225
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4025 1975 3975 1975
+$Comp
+L Duet3:GND #PWR?
+U 1 1 5FE4858C
+P 4800 1200
+AR Path="/5FE30E62/5FE4858C" Ref="#PWR?"  Part="1" 
+AR Path="/50577A22/5FE4858C" Ref="#PWR046"  Part="1" 
+F 0 "#PWR046" H 4800 1200 30  0001 C CNN
+F 1 "GND" H 4800 1130 30  0001 C CNN
+F 2 "" H 4800 1200 60  0001 C CNN
+F 3 "" H 4800 1200 60  0001 C CNN
+	1    4800 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1200 4800 1100
+Wire Wire Line
+	4800 1100 4925 1100
+Wire Wire Line
+	4925 1100 4925 1275
+Wire Wire Line
+	5175 1575 5175 1500
+Wire Wire Line
+	5175 1500 5200 1500
+Wire Wire Line
+	5400 1500 5450 1500
+Connection ~ 6100 1500
+Wire Wire Line
+	6100 2475 6100 1950
+Wire Wire Line
+	3575 3100 6100 3100
+Wire Wire Line
+	5825 2475 6100 2475
+Wire Wire Line
+	6100 2475 6100 3100
+Connection ~ 6100 2475
+Connection ~ 6100 3100
+Wire Wire Line
+	4025 2225 3900 2225
+Wire Wire Line
+	3500 2225 3350 2225
+Wire Wire Line
+	3350 2225 3350 3100
+Connection ~ 3350 3100
+Wire Wire Line
+	3350 3100 3575 3100
+$Comp
+L Duet3:R_SMALL R?
+U 1 1 5FE485AD
+P 3250 1425
+AR Path="/5FE30E62/5FE485AD" Ref="R?"  Part="1" 
+AR Path="/50577A22/5FE485AD" Ref="R105"  Part="1" 
+F 0 "R105" V 3325 1433 50  0000 C CNN
+F 1 "16K" V 3182 1437 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Wbry" H 3250 1425 60  0001 C CNN
+F 3 "" H 3550 1600 60  0001 C CNN
+F 4 "." H 3250 1425 50  0001 C CNN "Part Number"
+	1    3250 1425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 1225 3250 1100
+Connection ~ 3250 1100
+$Comp
+L Duet3:C_POL C?
+U 1 1 5FE485C0
+P 2500 1450
+AR Path="/5FE30E62/5FE485C0" Ref="C?"  Part="1" 
+AR Path="/50577A22/5FE485C0" Ref="C139"  Part="1" 
+F 0 "C139" H 2350 1550 50  0000 L CNN
+F 1 "100u 40V" V 2425 1025 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 2500 1450 60  0001 C CNN
+F 3 "e.g EEEFT1V101AP" H 2500 1450 60  0001 C CNN
+F 4 "." H 2500 1450 50  0001 C CNN "Part Number"
+	1    2500 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1350 2500 1100
+Connection ~ 2500 1100
+Wire Wire Line
+	2500 1100 2750 1100
+Wire Wire Line
+	2500 1550 2500 1725
+Connection ~ 2500 1725
+Wire Wire Line
+	2500 1725 2750 1725
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5FE485DA
+P 3950 1500
+AR Path="/5FE30E62/5FE485DA" Ref="C?"  Part="1" 
+AR Path="/50577A22/5FE485DA" Ref="C143"  Part="1" 
+F 0 "C143" V 3850 1425 50  0000 L CNN
+F 1 "0u1" V 4075 1425 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Wbry" H 3950 1500 60  0001 C CNN
+F 3 "~" H 3950 1500 60  0000 C CNN
+F 4 "." H 3950 1500 50  0001 C CNN "Part Number"
+	1    3950 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3975 1975 3975 1825
+Wire Wire Line
+	3975 1825 4125 1825
+Wire Wire Line
+	4125 1825 4125 1500
+Wire Wire Line
+	4050 1500 4125 1500
+Connection ~ 3975 1975
+$Comp
+L Duet3:GND #PWR?
+U 1 1 5FE485E6
+P 3725 1600
+AR Path="/5FE30E62/5FE485E6" Ref="#PWR?"  Part="1" 
+AR Path="/50577A22/5FE485E6" Ref="#PWR043"  Part="1" 
+F 0 "#PWR043" H 3725 1600 30  0001 C CNN
+F 1 "GND" H 3725 1530 30  0001 C CNN
+F 2 "" H 3725 1600 60  0001 C CNN
+F 3 "" H 3725 1600 60  0001 C CNN
+	1    3725 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1500 3725 1500
+Wire Wire Line
+	3725 1500 3725 1600
+Connection ~ 7000 3100
+Wire Wire Line
+	7000 3100 7250 3100
+Connection ~ 7250 3100
+Wire Wire Line
+	7250 1700 7250 1500
+Wire Wire Line
+	7000 1700 7000 1500
+Connection ~ 7000 1500
+Wire Wire Line
+	7000 1500 7250 1500
+Wire Wire Line
+	7400 1500 7250 1500
+Connection ~ 7250 1500
+Wire Wire Line
+	7600 1500 7775 1500
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5FE485FD
+P 7775 1750
+AR Path="/5FE30E62/5FE485FD" Ref="C?"  Part="1" 
+AR Path="/50577A22/5FE485FD" Ref="C149"  Part="1" 
+F 0 "C149" H 7550 1850 50  0000 L CNN
+F 1 "10u 35V" V 7725 1350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7775 1750 60  0001 C CNN
+F 3 "GRM31CR6YA106KA12L" H 7775 1750 60  0001 C CNN
+F 4 "." H 7775 1750 50  0001 C CNN "Part Number"
+	1    7775 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7775 1650 7775 1500
+Connection ~ 7775 1500
+Wire Wire Line
+	7775 1850 7775 3100
+Wire Wire Line
+	3250 1700 3250 1625
+Wire Wire Line
+	3550 1975 3550 2175
+Wire Wire Line
+	3550 2175 3300 2175
+Wire Wire Line
+	3300 2175 3300 2300
+Wire Wire Line
+	3300 2300 3250 2300
+Wire Wire Line
+	3550 1975 3975 1975
+Wire Wire Line
+	3250 2300 3200 2300
+Connection ~ 3250 2300
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5FE4862D
+P 2750 1450
+AR Path="/5FE30E62/5FE4862D" Ref="C?"  Part="1" 
+AR Path="/50577A22/5FE4862D" Ref="C140"  Part="1" 
+F 0 "C140" H 2575 1550 50  0000 L CNN
+F 1 "10u 40V" V 2700 1000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2750 1450 60  0001 C CNN
+F 3 "GRM31CR6YA106KA12L" H 2750 1450 60  0001 C CNN
+F 4 "." H 2750 1450 50  0001 C CNN "Part Number"
+	1    2750 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:GND #PWR?
+U 1 1 61EBC502
+P 5875 8175
+AR Path="/5B12C3FC/61EBC502" Ref="#PWR?"  Part="1" 
+AR Path="/50577A22/61EBC502" Ref="#PWR0167"  Part="1" 
+F 0 "#PWR0167" H 5875 8175 30  0001 C CNN
+F 1 "GND" H 5875 8105 30  0001 C CNN
+F 2 "" H 5875 8175 60  0001 C CNN
+F 3 "" H 5875 8175 60  0001 C CNN
+	1    5875 8175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:R_SMALL R?
+U 1 1 61EBC508
+P 5300 7600
+AR Path="/5B12C3FC/61EBC508" Ref="R?"  Part="1" 
+AR Path="/50577A22/61EBC508" Ref="R164"  Part="1" 
+F 0 "R164" V 5375 7608 50  0000 C CNN
+F 1 "1K" V 5232 7612 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Wbry" H 5300 7600 60  0001 C CNN
+F 3 "~" H 5300 7600 60  0000 C CNN
+F 4 "." H 5300 7600 50  0001 C CNN "Part Number"
+	1    5300 7600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 7600 5575 7600
+Text GLabel 4950 7600 0    60   Input ~ 0
+PS_ON_BUFF
+Text GLabel 5300 6900 0    60   Input ~ 0
+PS_ON_SW
+Text Notes 4375 6500 0    60   ~ 0
+PS_ON Control
+Wire Notes Line
+	6075 8450 4275 8450
+Wire Notes Line
+	4175 7850 725  7850
+Wire Notes Line
+	725  7850 725  6250
+Wire Notes Line
+	725  6250 4175 6250
+Wire Notes Line
+	4175 6250 4175 7850
+Wire Notes Line
+	4275 6250 6075 6250
+Wire Notes Line
+	6075 6250 6075 8450
+Wire Notes Line
+	4275 6250 4275 8450
+Wire Notes Line
+	6275 6250 6275 8450
+Wire Notes Line
+	6275 8450 8225 8450
+Wire Notes Line
+	8225 8450 8225 6250
+Wire Notes Line
+	8225 6250 6275 6250
+Wire Notes Line
+	8375 6250 8375 8450
+Wire Notes Line
+	8375 8450 10225 8450
+Wire Notes Line
+	10225 8450 10225 6250
+Wire Notes Line
+	10225 6250 8375 6250
+Wire Wire Line
+	7250 3100 7775 3100
+Connection ~ 7775 3100
+$Comp
+L Duet3:CDBA540 D?
+U 1 1 5C89F813
+P 10450 2225
+AR Path="/5FE30E62/5C89F813" Ref="D?"  Part="1" 
+AR Path="/50577A22/5C89F813" Ref="D29"  Part="1" 
+F 0 "D29" H 10650 2250 40  0000 C CNN
+F 1 "3A 40V" H 10450 2125 40  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 10450 2225 60  0001 C CNN
+F 3 "" H 10450 2225 60  0001 C CNN
+F 4 "ACDBA340-HF or similar" H 10450 2225 50  0001 C CNN "Part Number"
+	1    10450 2225
+	0    -1   -1   0   
+$EndComp
+Text GLabel 10500 3075 0    60   Input ~ 0
+5V_EXT_INPUT
+Text Label 6000 1500 0    60   ~ 0
+LX
+Text Label 6650 1500 0    20   ~ 0
+L3_OUT
+Text Label 4675 1500 0    8    ~ 0
+5VIN_BUCK_IN
+$Comp
+L Device:Fuse F4
+U 1 1 5C3BA3AE
+P 9225 7300
+F 0 "F4" V 9325 7300 50  0000 C CNN
+F 1 "OUT0_FUSE" V 9125 7300 50  0000 C CNN
+F 2 "complib:MCCQ-122-minibladefuseholder" V 9155 7300 50  0001 C CNN
+F 3 "~" H 9225 7300 50  0001 C CNN
+F 4 "." H 9225 7300 50  0001 C CNN "Part Number"
+	1    9225 7300
+	0    -1   -1   0   
+$EndComp
+Text Notes 9025 7675 0    60   ~ 0
+15A/20A\n
+Text GLabel 8925 7300 0    60   Input ~ 0
+V_OUT0_IN
+Text GLabel 9525 7300 2    60   Input ~ 0
+V_OUT0_OUT
+Text GLabel 10850 1200 2    60   Input ~ 0
+5V_EXT
+Text GLabel 10825 1500 2    60   Input ~ 0
+5V_INT
+$Comp
+L Duet3:CDBA540 D?
+U 1 1 5C46C03C
+P 8000 1200
+AR Path="/5FE30E62/5C46C03C" Ref="D?"  Part="1" 
+AR Path="/50577A22/5C46C03C" Ref="D30"  Part="1" 
+F 0 "D30" H 8150 1150 40  0000 C CNN
+F 1 "3A 40V" H 8050 1300 40  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 8000 1200 60  0001 C CNN
+F 3 "" H 8000 1200 60  0001 C CNN
+F 4 "ACDBA340-HF or similar" H 8000 1200 50  0001 C CNN "Part Number"
+	1    8000 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7925 1500 7775 1500
+Wire Wire Line
+	7800 1200 7775 1200
+Wire Wire Line
+	10825 1500 10725 1500
+$Comp
+L Duet3:R_SMALL R?
+U 1 1 5C4C0824
+P 8650 1825
+AR Path="/5FE30E62/5C4C0824" Ref="R?"  Part="1" 
+AR Path="/50577A22/5C4C0824" Ref="R182"  Part="1" 
+F 0 "R182" V 8575 1825 50  0000 C CNN
+F 1 "820R" V 8700 1650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Wbry" H 8650 1825 60  0001 C CNN
+F 3 "~" H 8650 1825 60  0000 C CNN
+F 4 "." H 8650 1825 50  0001 C CNN "Part Number"
+	1    8650 1825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 1625 8650 1200
+Wire Wire Line
+	8650 1200 8500 1200
+Connection ~ 8950 1500
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5C4EA6D6
+P 9225 1800
+AR Path="/5FE30E62/5C4EA6D6" Ref="C?"  Part="1" 
+AR Path="/50577A22/5C4EA6D6" Ref="C203"  Part="1" 
+F 0 "C203" V 9100 1750 50  0000 L CNN
+F 1 "220p 50V" V 9275 1375 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Wbry" H 9225 1800 60  0001 C CNN
+F 3 "" H 9225 1800 60  0001 C CNN
+F 4 "." H 9225 1800 50  0001 C CNN "Part Number"
+	1    9225 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9225 1500 9225 1700
+Connection ~ 9225 1500
+Wire Wire Line
+	9225 1500 8950 1500
+$Comp
+L Duet3:R_SMALL R?
+U 1 1 5C50D5D5
+P 8950 2600
+AR Path="/5FE30E62/5C50D5D5" Ref="R?"  Part="1" 
+AR Path="/50577A22/5C50D5D5" Ref="R184"  Part="1" 
+F 0 "R184" V 8875 2600 50  0000 C CNN
+F 1 "150R" V 9000 2425 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Wbry" H 8950 2600 60  0001 C CNN
+F 3 "~" H 8950 2600 60  0000 C CNN
+F 4 "." H 8950 2600 50  0001 C CNN "Part Number"
+	1    8950 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 3100 8950 2800
+Wire Wire Line
+	7775 1200 7775 1500
+Text Notes 775  8200 0    60   ~ 0
+5V Input, 3.3V  Output for external use only\nLow Drop-Out Linear Regulator
+Text GLabel 3625 8600 2    60   Input ~ 0
+3.3V_EXT
+Text GLabel 1225 8600 0    60   Input ~ 0
+5V_INT
+$Comp
+L Duet3:GND #PWR085
+U 1 1 5C65FF43
+P 1925 9325
+F 0 "#PWR085" H 1925 9325 30  0001 C CNN
+F 1 "GND" H 1925 9255 30  0001 C CNN
+F 2 "" H 1925 9325 60  0001 C CNN
+F 3 "" H 1925 9325 60  0001 C CNN
+	1    1925 9325
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4175 9600 725  9600
+Wire Notes Line
+	725  9600 725  7975
+Wire Notes Line
+	725  7975 4175 7975
+Wire Notes Line
+	4175 7975 4175 9600
+Wire Wire Line
+	3125 7300 3125 7500
+Wire Wire Line
+	3125 7500 2025 7500
+$Comp
+L Regulator_Linear:AP2127K-ADJ U18
+U 1 1 5C7572A5
+P 1925 8700
+F 0 "U18" H 1925 8950 50  0000 C CNN
+F 1 "AP2127K-ADJ" H 1925 8325 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1925 9025 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP2127.pdf" H 1925 8800 50  0001 C CNN
+F 4 "." H 1925 8700 50  0001 C CNN "Part Number"
+	1    1925 8700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2225 8600 2425 8600
+Wire Wire Line
+	1625 8700 1500 8700
+Wire Wire Line
+	1500 8700 1500 8600
+Connection ~ 1500 8600
+Wire Wire Line
+	1500 8600 1625 8600
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5C774F1F
+P 1350 8775
+AR Path="/5FE30E62/5C774F1F" Ref="C?"  Part="1" 
+AR Path="/50577A22/5C774F1F" Ref="C72"  Part="1" 
+F 0 "C72" V 1225 8725 50  0000 L CNN
+F 1 "1u 10V+" V 1400 8350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Wbry" H 1350 8775 60  0001 C CNN
+F 3 "GRM31CR6YA106KA12L" H 1350 8775 60  0001 C CNN
+F 4 "." H 1350 8775 50  0001 C CNN "Part Number"
+	1    1350 8775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5C77F540
+P 2425 8975
+AR Path="/5FE30E62/5C77F540" Ref="C?"  Part="1" 
+AR Path="/50577A22/5C77F540" Ref="C202"  Part="1" 
+F 0 "C202" V 2300 8925 50  0000 L CNN
+F 1 "1u 10V+" V 2475 8550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Wbry" H 2425 8975 60  0001 C CNN
+F 3 "GRM31CR6YA106KA12L" H 2425 8975 60  0001 C CNN
+F 4 "." H 2425 8975 50  0001 C CNN "Part Number"
+	1    2425 8975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1925 9250 1925 9325
+Wire Wire Line
+	1925 9250 1925 9000
+Connection ~ 1925 9250
+Wire Wire Line
+	1925 9250 2425 9250
+Wire Wire Line
+	2425 9250 2425 9075
+Wire Wire Line
+	2425 8875 2425 8600
+Connection ~ 2425 8600
+Wire Wire Line
+	2225 8700 2600 8700
+$Comp
+L Duet3:R_SMALL R?
+U 1 1 5C7D64F3
+P 3250 8850
+AR Path="/5FE30E62/5C7D64F3" Ref="R?"  Part="1" 
+AR Path="/50577A22/5C7D64F3" Ref="R180"  Part="1" 
+F 0 "R180" V 3175 8850 50  0000 C CNN
+F 1 "16K" V 3325 8750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Wbry" H 3250 8850 60  0001 C CNN
+F 3 "~" H 3250 8850 60  0000 C CNN
+F 4 "." H 3250 8850 50  0001 C CNN "Part Number"
+	1    3250 8850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:R_SMALL R?
+U 1 1 5C7D881E
+P 3250 9325
+AR Path="/5FE30E62/5C7D881E" Ref="R?"  Part="1" 
+AR Path="/50577A22/5C7D881E" Ref="R181"  Part="1" 
+F 0 "R181" V 3175 9325 50  0000 C CNN
+F 1 "5K1" V 3325 9225 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Wbry" H 3250 9325 60  0001 C CNN
+F 3 "~" H 3250 9325 60  0000 C CNN
+F 4 "." H 3250 9325 50  0001 C CNN "Part Number"
+	1    3250 9325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 8650 3250 8600
+Connection ~ 3250 8600
+Wire Wire Line
+	3250 8600 3625 8600
+Wire Wire Line
+	2600 9050 3250 9050
+Wire Wire Line
+	2600 8700 2600 9050
+Wire Wire Line
+	3250 9050 3250 9125
+Connection ~ 3250 9050
+Wire Wire Line
+	3250 9525 2625 9525
+Wire Wire Line
+	2625 9525 2625 9250
+Wire Wire Line
+	2625 9250 2425 9250
+Connection ~ 2425 9250
+Text Label 7775 1350 0    28   ~ 0
+5V_common
+Wire Wire Line
+	9700 2425 9700 2725
+Wire Wire Line
+	9700 2725 10000 2725
+Wire Wire Line
+	10000 2725 10000 2400
+Connection ~ 9700 2725
+Wire Wire Line
+	9700 2725 9700 2875
+Connection ~ 10000 1500
+Wire Wire Line
+	10000 1500 9225 1500
+Wire Wire Line
+	9700 1200 9700 2025
+Connection ~ 9700 1200
+Wire Wire Line
+	9700 1200 9475 1200
+Wire Wire Line
+	10725 2375 10725 2725
+Wire Wire Line
+	10450 2725 10450 2425
+Connection ~ 10725 1500
+Wire Wire Line
+	10450 1200 10450 1900
+Wire Wire Line
+	10450 1200 9700 1200
+Wire Wire Line
+	10500 3075 10650 3075
+$Comp
+L Duet3:C_POL C?
+U 1 1 5C0C7297
+P 9475 1800
+AR Path="/5FE30E62/5C0C7297" Ref="C?"  Part="1" 
+AR Path="/50577A22/5C0C7297" Ref="C201"  Part="1" 
+F 0 "C201" H 9325 1900 50  0000 L CNN
+F 1 "100u 16V" V 9425 1375 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 9475 1800 60  0001 C CNN
+F 3 "" H 9475 1800 60  0001 C CNN
+F 4 "." H 9475 1800 50  0001 C CNN "Part Number"
+	1    9475 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7775 3100 8950 3100
+Wire Wire Line
+	9475 1700 9475 1200
+Connection ~ 9475 1200
+Wire Wire Line
+	9475 1200 8650 1200
+Wire Wire Line
+	9475 1900 9475 3100
+Wire Wire Line
+	9475 3100 8950 3100
+Connection ~ 8950 3100
+Wire Wire Line
+	10450 2725 10650 2725
+Wire Wire Line
+	10650 3075 10650 2725
+Connection ~ 10650 2725
+Wire Wire Line
+	10650 2725 10725 2725
+$Comp
+L Duet3:R_SMALL R187
+U 1 1 5CB7F5FE
+P 10250 2250
+F 0 "R187" V 10200 2275 50  0000 C CNN
+F 1 "220R >125mW" V 10325 2325 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Wbry" H 10250 2250 60  0001 C CNN
+F 3 "~" H 10250 2250 60  0000 C CNN
+F 4 "." H 10250 2250 50  0001 C CNN "Part Number"
+	1    10250 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 2050 10250 1900
+Wire Wire Line
+	10250 1900 10450 1900
+Connection ~ 10450 1900
+Wire Wire Line
+	10450 1900 10450 2025
+Wire Wire Line
+	10250 2450 10250 2725
+Wire Wire Line
+	10250 2725 10450 2725
+Connection ~ 10450 2725
+Wire Wire Line
+	1350 9250 1925 9250
+Wire Wire Line
+	1350 8875 1350 9250
+Wire Wire Line
+	1350 8600 1500 8600
+Wire Wire Line
+	1225 8600 1350 8600
+Connection ~ 1350 8600
+Wire Wire Line
+	1350 8675 1350 8600
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5CBB7391
+P 1375 7075
+AR Path="/5FE30E62/5CBB7391" Ref="C?"  Part="1" 
+AR Path="/50577A22/5CBB7391" Ref="C204"  Part="1" 
+F 0 "C204" V 1250 7025 50  0000 L CNN
+F 1 "10u" V 1450 6850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1375 7075 60  0001 C CNN
+F 3 "GRM31CR6YA106KA12L" H 1375 7075 60  0001 C CNN
+F 4 "." H 1375 7075 50  0001 C CNN "Part Number"
+	1    1375 7075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1925 7500 1375 7500
+Wire Wire Line
+	1375 7500 1375 7175
+Connection ~ 1925 7500
+Wire Wire Line
+	1375 6975 1375 6875
+Connection ~ 1375 6875
+Wire Wire Line
+	1375 6875 1625 6875
+Wire Wire Line
+	8925 7300 9075 7300
+Wire Wire Line
+	9375 7300 9525 7300
+Text Label 5525 7600 0    8    ~ 0
+TR11_G
+Text Label 5200 1500 0    8    ~ 0
+5VIN_BUCK_BS
+Text Label 3950 2225 0    8    ~ 0
+5VIN_BUCK_FSW
+Text Label 3900 1975 0    8    ~ 0
+5VIN_BUCK_EN
+Text Label 5875 2225 0    8    ~ 0
+5VIN_BUCK_FB
+Text Label 4925 1525 0    8    ~ 0
+5VIN_BUCK_SS
+Text Label 3975 2475 0    8    ~ 0
+5VIN_BUCK_COMP
+Text Label 3575 2475 0    8    ~ 0
+COMP_CAP_R
+Text Label 3250 1675 0    8    ~ 0
+EN_JP_1
+Text Label 2300 8600 0    8    ~ 0
+3V3_EXT_OUT
+Text Label 2300 8700 0    8    ~ 0
+3V3_EXT_ADJ
+$Comp
+L Duet3:R_SMALL R?
+U 1 1 5D5EF945
+P 5650 1500
+AR Path="/5FE30E62/5D5EF945" Ref="R?"  Part="1" 
+AR Path="/50577A22/5D5EF945" Ref="R123"  Part="1" 
+F 0 "R123" V 5725 1508 50  0000 C CNN
+F 1 "15R" V 5582 1512 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Wbry" H 5650 1500 60  0001 C CNN
+F 3 "~" H 5650 1500 60  0000 C CNN
+F 4 "." H 5650 1500 50  0001 C CNN "Part Number"
+	1    5650 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5850 1500 5900 1500
+Wire Wire Line
+	5900 1975 5900 1500
+Wire Wire Line
+	5825 1975 5900 1975
+Connection ~ 5900 1500
+Wire Wire Line
+	5900 1500 6100 1500
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5EEA4CBE
+P 3875 3975
+AR Path="/50577A22/5EE94BEE/5EEA4CBE" Ref="C?"  Part="1" 
+AR Path="/50577A22/5EEA4CBE" Ref="C182"  Part="1" 
+F 0 "C182" H 3900 4050 50  0000 L CNN
+F 1 "100n" H 3875 3900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Wbry" H 3875 3975 60  0001 C CNN
+F 3 "~" H 3875 3975 60  0000 C CNN
+F 4 "." H 3875 3975 50  0001 C CNN "Part Number"
+	1    3875 3975
+	0    1    1    0   
+$EndComp
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5EEA4CC5
+P 2375 4275
+AR Path="/50577A22/5EE94BEE/5EEA4CC5" Ref="C?"  Part="1" 
+AR Path="/50577A22/5EEA4CC5" Ref="C178"  Part="1" 
+F 0 "C178" H 2200 4375 50  0000 L CNN
+F 1 "10u 50V" V 2325 3875 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2375 4275 60  0001 C CNN
+F 3 "GRM31CR6YA106KA12L" H 2375 4275 60  0001 C CNN
+F 4 "." H 2375 4275 50  0001 C CNN "Part Number"
+	1    2375 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:L_MINI L?
+U 1 1 5EEA4CCD
+P 5550 4525
+AR Path="/50577A22/5EE94BEE/5EEA4CCD" Ref="L?"  Part="1" 
+AR Path="/50577A22/5EEA4CCD" Ref="L13"  Part="1" 
+F 0 "L13" H 5475 4475 30  0000 C CNN
+F 1 "100 ohm, 4 A" H 5550 4575 22  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 5550 4525 60  0001 C CNN
+F 3 "" H 5550 4525 60  0000 C CNN
+F 4 "MPZ2012S101A or similar" H 5550 4525 50  0001 C CNN "Part Number"
+	1    5550 4525
+	-1   0    0    1   
+$EndComp
+Text Notes 850  3925 0    60   ~ 0
+19-32V Input, 12V 1A Output\nPWM Buck Converter\n
+Text GLabel 6975 4175 2    60   Input ~ 0
+12V_EXT
+$Comp
+L power:GND #PWR?
+U 1 1 5EEA4CD6
+P 3275 6025
+AR Path="/50577A22/5EE94BEE/5EEA4CD6" Ref="#PWR?"  Part="1" 
+AR Path="/50577A22/5EEA4CD6" Ref="#PWR092"  Part="1" 
+AR Path="/5EEA4CD6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR092" H 3275 6025 30  0001 C CNN
+F 1 "GND" H 3275 5955 30  0001 C CNN
+F 2 "" H 3275 6025 60  0001 C CNN
+F 3 "" H 3275 6025 60  0001 C CNN
+	1    3275 6025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:L_MINI L?
+U 1 1 5EEA4CDD
+P 4550 4525
+AR Path="/50577A22/5EE94BEE/5EEA4CDD" Ref="L?"  Part="1" 
+AR Path="/50577A22/5EEA4CDD" Ref="L12"  Part="1" 
+F 0 "L12" H 4475 4475 30  0000 C CNN
+F 1 "4u7" H 4550 4575 22  0000 C CNN
+F 2 "Inductor_SMD:L_Taiyo-Yuden_NR-50xx" H 4550 4525 60  0001 C CNN
+F 3 "" H 4500 4375 35  0001 C CNN
+F 4 "NRS5024T4R7MMGJ or similar" H 4550 4525 50  0001 C CNN "Part Number"
+	1    4550 4525
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	7400 3725 750  3725
+Wire Notes Line
+	7400 3725 7400 6150
+Wire Notes Line
+	7400 6150 750  6150
+Wire Notes Line
+	750  6150 750  3725
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5EEA4CE8
+P 2175 4275
+AR Path="/50577A22/5EE94BEE/5EEA4CE8" Ref="C?"  Part="1" 
+AR Path="/50577A22/5EEA4CE8" Ref="C176"  Part="1" 
+F 0 "C176" H 2025 4375 50  0000 L CNN
+F 1 "0u1 50V" V 2100 3850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Wbry" H 2175 4275 60  0001 C CNN
+F 3 "e.g EEEFT1V101AP" H 2175 4275 60  0001 C CNN
+F 4 "." H 2175 4275 50  0001 C CNN "Part Number"
+	1    2175 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5EEA4CF1
+P 5800 4725
+AR Path="/50577A22/5EE94BEE/5EEA4CF1" Ref="C?"  Part="1" 
+AR Path="/50577A22/5EEA4CF1" Ref="C187"  Part="1" 
+F 0 "C187" H 5825 4800 50  0000 L CNN
+F 1 "1u" V 5850 4550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Wbry" H 5800 4725 60  0001 C CNN
+F 3 "GRM31CR6YA106KA12L" H 5800 4725 60  0001 C CNN
+F 4 "CL10A105KB8NNNC or equivalent" H 5800 4725 50  0001 C CNN "Part Number"
+F 5 "35V +" H 5800 4725 50  0001 C CNN "Rating"
+	1    5800 4725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3625 4075 3625 3975
+Wire Wire Line
+	3625 3975 3775 3975
+Wire Wire Line
+	4275 4975 4375 4975
+Wire Wire Line
+	4375 4975 4375 4825
+Wire Wire Line
+	4375 4525 4275 4525
+Wire Wire Line
+	4275 4675 4375 4675
+Connection ~ 4375 4675
+Wire Wire Line
+	4375 4675 4375 4525
+Wire Wire Line
+	4275 4825 4375 4825
+Connection ~ 4375 4825
+Wire Wire Line
+	4375 4825 4375 4675
+Wire Wire Line
+	4375 4525 4375 4425
+Wire Wire Line
+	4375 3975 3975 3975
+Connection ~ 4375 4525
+Wire Wire Line
+	4450 4525 4375 4525
+Wire Wire Line
+	5050 4625 5050 4525
+Connection ~ 5050 4525
+Wire Wire Line
+	5300 4625 5300 4525
+Connection ~ 5300 4525
+Wire Wire Line
+	5300 4525 5050 4525
+Wire Wire Line
+	3475 5775 3475 5875
+Wire Wire Line
+	3475 5875 4825 5875
+Wire Wire Line
+	5050 4825 5050 5875
+Wire Wire Line
+	5050 5875 5300 5875
+Wire Wire Line
+	5300 5875 5300 4825
+Connection ~ 5050 5875
+Wire Wire Line
+	5300 5875 5800 5875
+Wire Wire Line
+	5800 5875 5800 4825
+Connection ~ 5300 5875
+Wire Wire Line
+	5800 4625 5800 4525
+Wire Wire Line
+	5800 4525 5650 4525
+Wire Wire Line
+	3475 5875 3325 5875
+Wire Wire Line
+	3325 5875 3325 5775
+Connection ~ 3475 5875
+Wire Wire Line
+	3325 5875 3275 5875
+Wire Wire Line
+	3175 5875 3175 5775
+Connection ~ 3325 5875
+Wire Wire Line
+	3175 5875 3025 5875
+Wire Wire Line
+	3025 5875 3025 5775
+Connection ~ 3175 5875
+Connection ~ 3025 5875
+Wire Wire Line
+	3275 6025 3275 5875
+Connection ~ 3275 5875
+Wire Wire Line
+	3275 5875 3175 5875
+Wire Wire Line
+	2375 4175 2375 4125
+Wire Wire Line
+	2375 4125 2175 4125
+Wire Wire Line
+	2175 4175 2175 4125
+Wire Wire Line
+	2375 4375 2375 4725
+Wire Wire Line
+	2375 4725 2175 4725
+Wire Wire Line
+	5300 4525 5450 4525
+Text Label 4375 4525 0    20   ~ 0
+12V_VSW
+Text Label 5150 4525 0    20   ~ 0
+12_VOUT
+Text Label 3625 3975 0    20   ~ 0
+12V_BST
+$Comp
+L Device:D_Schottky D?
+U 1 1 5EEA4D54
+P 6100 4175
+AR Path="/50577A22/5EE94BEE/5EEA4D54" Ref="D?"  Part="1" 
+AR Path="/50577A22/5EEA4D54" Ref="D35"  Part="1" 
+F 0 "D35" H 6100 4275 40  0000 C CNN
+F 1 "DSS14UTR" H 6100 4075 40  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 6100 4175 60  0001 C CNN
+F 3 "https://www.digikey.co.uk/product-detail/en/smc-diode-solutions/DSS14UTR/1655-1927-2-ND/8341859" H 6050 4325 35  0001 C CNN
+F 4 "DSS14UTR or RB162MM-40TR or similar" H 6100 4175 50  0001 C CNN "Part Number"
+F 5 " 1A,40V" H 6100 4175 50  0001 C CNN "Rating"
+F 6 "" H 6100 4175 50  0001 C CNN "PartNumber"
+	1    6100 4175
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5800 4525 5950 4525
+Connection ~ 5800 4525
+Wire Wire Line
+	6975 4175 6800 4175
+Wire Wire Line
+	4650 4525 4825 4525
+Text GLabel 1375 4125 0    60   Input ~ 0
+V_BK_IN
+Wire Wire Line
+	2175 4125 1925 4125
+Connection ~ 2175 4125
+Connection ~ 2175 4725
+Wire Wire Line
+	2175 5875 3025 5875
+$Comp
+L Duet3:R_SMALL R?
+U 1 1 5EEA4D68
+P 4825 5000
+AR Path="/50577A22/5EE94BEE/5EEA4D68" Ref="R?"  Part="1" 
+AR Path="/50577A22/5EEA4D68" Ref="R152"  Part="1" 
+F 0 "R152" V 4900 5008 50  0000 C CNN
+F 1 "60K4" V 4757 5012 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Wbry" H 4825 5000 60  0001 C CNN
+F 3 "~" H 4825 5000 60  0000 C CNN
+F 4 "." H 4825 5000 50  0001 C CNN "Part Number"
+	1    4825 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:R_SMALL R?
+U 1 1 5EEA4D6F
+P 4825 5450
+AR Path="/50577A22/5EE94BEE/5EEA4D6F" Ref="R?"  Part="1" 
+AR Path="/50577A22/5EEA4D6F" Ref="R153"  Part="1" 
+F 0 "R153" V 4900 5458 50  0000 C CNN
+F 1 "4K7" V 4757 5462 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Wbry" H 4825 5450 60  0001 C CNN
+F 3 "~" H 4825 5450 60  0000 C CNN
+F 4 "." H 4825 5450 50  0001 C CNN "Part Number"
+	1    4825 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4825 5200 4825 5225
+Wire Wire Line
+	4275 5225 4825 5225
+Connection ~ 4825 5225
+Wire Wire Line
+	4825 5225 4825 5250
+Wire Wire Line
+	4825 4800 4825 4525
+Connection ~ 4825 4525
+Wire Wire Line
+	4825 4525 5050 4525
+Wire Wire Line
+	4825 5650 4825 5875
+Connection ~ 4825 5875
+Wire Wire Line
+	4825 5875 5050 5875
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5EEA4D82
+P 5050 4725
+AR Path="/50577A22/5EE94BEE/5EEA4D82" Ref="C?"  Part="1" 
+AR Path="/50577A22/5EEA4D82" Ref="C185"  Part="1" 
+F 0 "C185" H 5075 4800 50  0000 L CNN
+F 1 "22u" V 5125 4500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5050 4725 60  0001 C CNN
+F 3 "" H 5050 4725 60  0001 C CNN
+F 4 "GRM21BR61E226ME44L" H 5050 4725 50  0001 C CNN "Part Number"
+F 5 "25V" H 5050 4725 50  0001 C CNN "Rating"
+	1    5050 4725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5EEA4D8B
+P 5300 4725
+AR Path="/50577A22/5EE94BEE/5EEA4D8B" Ref="C?"  Part="1" 
+AR Path="/50577A22/5EEA4D8B" Ref="C186"  Part="1" 
+F 0 "C186" H 5325 4800 50  0000 L CNN
+F 1 "22u" V 5375 4500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5300 4725 60  0001 C CNN
+F 3 "" H 5300 4725 60  0001 C CNN
+F 4 "GRM21BR61E226ME44L" H 5300 4725 50  0001 C CNN "Part Number"
+F 5 "25V" H 5300 4725 50  0001 C CNN "Rating"
+	1    5300 4725
+	1    0    0    -1  
+$EndComp
+Text Label 4475 5225 0    20   ~ 0
+12V_FB
+Text Label 5800 4525 0    8    ~ 0
+L9_OUT
+$Comp
+L Duet3:R_SMALL R?
+U 1 1 5EEA4D97
+P 4375 4225
+AR Path="/50577A22/5EE94BEE/5EEA4D97" Ref="R?"  Part="1" 
+AR Path="/50577A22/5EEA4D97" Ref="R148"  Part="1" 
+F 0 "R148" V 4450 4233 50  0000 C CNN
+F 1 "10R" V 4307 4237 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Wbry" H 4375 4225 60  0001 C CNN
+F 3 "~" H 4375 4225 60  0000 C CNN
+F 4 "0.1W+" H 4375 4225 50  0001 C CNN "Rating"
+F 5 "." H 4375 4225 50  0001 C CNN "Part Number"
+	1    4375 4225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4375 4025 4375 3975
+Text GLabel 6925 5075 2    60   Input ~ 0
+12V_MON
+$Comp
+L Device:D_Schottky D?
+U 1 1 5EEA4DA2
+P 6100 4525
+AR Path="/50577A22/5EE94BEE/5EEA4DA2" Ref="D?"  Part="1" 
+AR Path="/50577A22/5EEA4DA2" Ref="D36"  Part="1" 
+F 0 "D36" H 6100 4625 40  0000 C CNN
+F 1 "DSS14UTR" H 6100 4425 40  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 6100 4525 60  0001 C CNN
+F 3 "https://www.digikey.co.uk/product-detail/en/smc-diode-solutions/DSS14UTR/1655-1927-2-ND/8341859" H 6050 4675 35  0001 C CNN
+F 4 "DSS14UTR or RB162MM-40TR or similar" H 6100 4525 50  0001 C CNN "Part Number"
+F 5 " 1A,40V" H 6100 4525 50  0001 C CNN "Rating"
+F 6 "" H 6100 4525 50  0001 C CNN "PartNumber"
+	1    6100 4525
+	-1   0    0    1   
+$EndComp
+Text GLabel 7000 4525 2    60   Input ~ 0
+12V_VG
+Wire Wire Line
+	5800 4525 5800 4175
+Wire Wire Line
+	5800 4175 5950 4175
+$Comp
+L Duet3:R_SMALL R?
+U 1 1 5EEA4DAC
+P 6450 4750
+AR Path="/50577A22/5EE94BEE/5EEA4DAC" Ref="R?"  Part="1" 
+AR Path="/50577A22/5EEA4DAC" Ref="R154"  Part="1" 
+F 0 "R154" V 6525 4758 50  0000 C CNN
+F 1 "60K4" V 6400 4575 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Wbry" H 6450 4750 60  0001 C CNN
+F 3 "~" H 6450 4750 60  0000 C CNN
+F 4 "." H 6450 4750 50  0001 C CNN "Part Number"
+	1    6450 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:R_SMALL R?
+U 1 1 5EEA4DB3
+P 6450 5275
+AR Path="/50577A22/5EE94BEE/5EEA4DB3" Ref="R?"  Part="1" 
+AR Path="/50577A22/5EEA4DB3" Ref="R155"  Part="1" 
+F 0 "R155" V 6525 5283 50  0000 C CNN
+F 1 "4K7" V 6382 5287 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Wbry" H 6450 5275 60  0001 C CNN
+F 3 "~" H 6450 5275 60  0000 C CNN
+F 4 "." H 6450 5275 50  0001 C CNN "Part Number"
+	1    6450 5275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5EEA4DBA
+P 6650 5275
+AR Path="/50577A22/5EE94BEE/5EEA4DBA" Ref="C?"  Part="1" 
+AR Path="/50577A22/5EEA4DBA" Ref="C206"  Part="1" 
+F 0 "C206" H 6675 5350 50  0000 L CNN
+F 1 "10n" H 6650 5200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Wbry" H 6650 5275 60  0001 C CNN
+F 3 "~" H 6650 5275 60  0000 C CNN
+F 4 "." H 6650 5275 50  0001 C CNN "Part Number"
+	1    6650 5275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 5075 6650 5075
+Wire Wire Line
+	6650 5075 6650 5175
+Wire Wire Line
+	6650 5375 6650 5475
+Wire Wire Line
+	6650 5475 6450 5475
+Wire Wire Line
+	6450 5875 6450 5475
+Connection ~ 5800 5875
+Wire Wire Line
+	6925 5075 6650 5075
+Connection ~ 6650 5075
+Wire Wire Line
+	6250 4525 6275 4525
+Wire Wire Line
+	5800 5875 6275 5875
+$Comp
+L Duet3:C_POL C?
+U 1 1 5EEA4DD4
+P 6275 4725
+AR Path="/50577A22/5EE94BEE/5EEA4DD4" Ref="C?"  Part="1" 
+AR Path="/50577A22/5EEA4DD4" Ref="C205"  Part="1" 
+F 0 "C205" H 6175 4800 50  0000 L CNN
+F 1 "100u 16V+" V 6175 4350 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 6275 4725 60  0001 C CNN
+F 3 "" H 6275 4725 60  0000 C CNN
+F 4 "." H 6275 4725 50  0001 C CNN "Part Number"
+	1    6275 4725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6275 4625 6275 4525
+Connection ~ 6275 4525
+Wire Wire Line
+	6275 4825 6275 5875
+Connection ~ 6275 5875
+Wire Wire Line
+	6275 5875 6450 5875
+Wire Wire Line
+	6275 4525 6450 4525
+$Comp
+L Device:Q_NMOS_GSD TR?
+U 1 1 5EED69B1
+P 5775 7600
+AR Path="/5B12C3FC/5EED69B1" Ref="TR?"  Part="1" 
+AR Path="/50577A22/5EED69B1" Ref="TR11"  Part="1" 
+F 0 "TR11" H 5678 7850 70  0000 C CNN
+F 1 "AO3400A" H 5628 7303 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5775 7600 60  0001 C CNN
+F 3 "" H 5775 7600 60  0001 C CNN
+F 4 "AO3400A or similar (PMV20XNER, PMV40UN2)" H 5775 7600 50  0001 C CNN "Part Number"
+	1    5775 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet3:JUMPER JP?
+U 1 1 6D24202B
+P 12350 1475
+AR Path="/5FE30E62/6D24202B" Ref="JP?"  Part="1" 
+AR Path="/50577A22/6D24202B" Ref="JP5"  Part="1" 
+F 0 "JP5" H 12350 1625 60  0000 C CNN
+F 1 "SBC -> 5V*" H 12350 1395 40  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 12350 1475 60  0001 C CNN
+F 3 "" H 12350 1475 60  0001 C CNN
+F 4 "." H 12350 1475 50  0001 C CNN "Part Number"
+	1    12350 1475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 1500 10725 1500
+Connection ~ 10450 1200
+Wire Wire Line
+	10450 1200 10850 1200
+$Comp
+L Duet3:JUMPER JP?
+U 1 1 6D3AAE39
+P 12350 1150
+AR Path="/5FE30E62/6D3AAE39" Ref="JP?"  Part="1" 
+AR Path="/50577A22/6D3AAE39" Ref="JP4"  Part="1" 
+F 0 "JP4" H 12350 1300 60  0000 C CNN
+F 1 "5V -> SBC" H 12350 1070 40  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 12350 1150 60  0001 C CNN
+F 3 "" H 12350 1150 60  0001 C CNN
+F 4 "." H 12350 1150 50  0001 C CNN "Part Number"
+	1    12350 1150
+	1    0    0    -1  
+$EndComp
+Text GLabel 11900 1150 0    60   Input ~ 0
+5V_EXT
+Wire Wire Line
+	11900 1150 12050 1150
+Text GLabel 12800 1150 2    60   Input ~ 0
+5V_SBC
+Wire Wire Line
+	12800 1150 12650 1150
+Text GLabel 11900 1475 0    60   Input ~ 0
+5V_EXT
+Wire Wire Line
+	11900 1475 12050 1475
+Text GLabel 12825 1475 2    60   Input ~ 0
+5V_INT
+Wire Wire Line
+	12825 1475 12650 1475
+Text Notes 11750 2250 0    60   ~ 0
+JP4 is normally fitted:\nDuet powers SBC\n\nJP5 allows for SBC to\nPower Duet.\nBypasses 5V protection
+Wire Notes Line
+	11400 650  11400 2350
+Wire Notes Line
+	11400 2350 13350 2350
+Wire Notes Line
+	13350 2350 13350 650 
+Wire Notes Line
+	13350 650  11400 650 
+Text Notes 11425 750  0    60   ~ 0
+SBC <-> Duet 5V jumpers
+Text GLabel 2050 825  2    60   Input ~ 0
+V_BK_IN
+Wire Wire Line
+	2000 825  2000 1100
+Text Label 5875 7350 0    8    ~ 0
+TR11_D
+Wire Wire Line
+	5300 6900 5875 6900
+Wire Wire Line
+	7600 7825 8050 7825
+Wire Wire Line
+	7350 7825 7600 7825
+Connection ~ 7600 7825
+$Comp
+L Device:LED D37
+U 1 1 5D7437C7
+P 6625 7575
+F 0 "D37" H 6625 7675 50  0000 C CNN
+F 1 "12V+" H 6725 7425 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 6625 7575 60  0001 C CNN
+F 3 "" H 6625 7575 60  0001 C CNN
+F 4 "150060AS75000 or equivalent Amber" H 6625 7575 50  0001 C CNN "Part Number"
+	1    6625 7575
+	0    -1   -1   0   
+$EndComp
+Text GLabel 6625 6925 1    60   Input ~ 0
+12V_EXT
+Text Notes 6475 7750 1    60   ~ 0
+Amber
+$Comp
+L Duet3:R_SMALL R124
+U 1 1 5D7437D0
+P 6625 7175
+F 0 "R124" V 6700 7183 50  0000 C CNN
+F 1 "4K7" V 6557 7187 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Wbry" H 6625 7175 60  0001 C CNN
+F 3 "~" H 6625 7175 60  0000 C CNN
+F 4 "." H 6625 7175 50  0001 C CNN "Part Number"
+	1    6625 7175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6625 6925 6625 6975
+Wire Wire Line
+	6625 7425 6625 7375
+Wire Wire Line
+	7050 7825 6625 7825
+Wire Wire Line
+	6625 7825 6625 7725
+Connection ~ 7050 7825
+$Comp
+L Device:D_Schottky D?
+U 1 1 5D7A2DEA
+P 8075 1500
+AR Path="/50577A22/5EE94BEE/5D7A2DEA" Ref="D?"  Part="1" 
+AR Path="/50577A22/5D7A2DEA" Ref="D31"  Part="1" 
+F 0 "D31" H 8075 1600 40  0000 C CNN
+F 1 "DSS14UTR" H 8075 1400 40  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 8075 1500 60  0001 C CNN
+F 3 "https://www.digikey.co.uk/product-detail/en/smc-diode-solutions/DSS14UTR/1655-1927-2-ND/8341859" H 8025 1650 35  0001 C CNN
+F 4 "DSS14UTR or RB162MM-40TR or similar" H 8075 1500 50  0001 C CNN "Part Number"
+F 5 " 1A,40V" H 8075 1500 50  0001 C CNN "Rating"
+F 6 "" H 8075 1500 50  0001 C CNN "PartNumber"
+	1    8075 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8225 1500 8950 1500
+$Comp
+L Device:D_Schottky D?
+U 1 1 5D7DD0A5
+P 10725 2225
+AR Path="/50577A22/5EE94BEE/5D7DD0A5" Ref="D?"  Part="1" 
+AR Path="/50577A22/5D7DD0A5" Ref="D33"  Part="1" 
+F 0 "D33" H 10725 2150 40  0000 C CNN
+F 1 "DSS14UTR" H 10700 2325 40  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 10725 2225 60  0001 C CNN
+F 3 "https://www.digikey.co.uk/product-detail/en/smc-diode-solutions/DSS14UTR/1655-1927-2-ND/8341859" H 10675 2375 35  0001 C CNN
+F 4 "DSS14UTR or RB162MM-40TR or similar" H 10725 2225 50  0001 C CNN "Part Number"
+F 5 " 1A,40V" H 10725 2225 50  0001 C CNN "Rating"
+F 6 "" H 10725 2225 50  0001 C CNN "PartNumber"
+	1    10725 2225
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 5D7DD432
+P 10000 2250
+AR Path="/50577A22/5EE94BEE/5D7DD432" Ref="D?"  Part="1" 
+AR Path="/50577A22/5D7DD432" Ref="D32"  Part="1" 
+F 0 "D32" H 9975 2150 40  0000 C CNN
+F 1 "DSS14UTR" H 10000 2350 40  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 10000 2250 60  0001 C CNN
+F 3 "https://www.digikey.co.uk/product-detail/en/smc-diode-solutions/DSS14UTR/1655-1927-2-ND/8341859" H 9950 2400 35  0001 C CNN
+F 4 "DSS14UTR or RB162MM-40TR or similar" H 10000 2250 50  0001 C CNN "Part Number"
+F 5 " 1A,40V" H 10000 2250 50  0001 C CNN "Rating"
+F 6 "" H 10000 2250 50  0001 C CNN "PartNumber"
+	1    10000 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10000 1500 10000 2100
+Wire Wire Line
+	10725 1500 10725 2075
+Wire Wire Line
+	6450 4550 6450 4525
+Connection ~ 6450 4525
+Wire Wire Line
+	6450 4525 7000 4525
+Wire Wire Line
+	4950 7600 5100 7600
+Wire Wire Line
+	5875 7800 5875 8175
+Wire Wire Line
+	5875 6900 5875 7400
+Wire Wire Line
+	6450 4950 6450 5075
+Connection ~ 6450 5075
+$Comp
+L Device:D_Schottky D?
+U 1 1 5D52B032
+P 2750 8600
+AR Path="/50577A22/5EE94BEE/5D52B032" Ref="D?"  Part="1" 
+AR Path="/50577A22/5D52B032" Ref="D21"  Part="1" 
+F 0 "D21" H 2750 8700 40  0000 C CNN
+F 1 "DSS14UTR" H 2750 8500 40  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 2750 8600 60  0001 C CNN
+F 3 "https://www.digikey.co.uk/product-detail/en/smc-diode-solutions/DSS14UTR/1655-1927-2-ND/8341859" H 2700 8750 35  0001 C CNN
+F 4 "DSS14UTR or RB162MM-40TR or similar" H 2750 8600 50  0001 C CNN "Part Number"
+F 5 " 1A,40V" H 2750 8600 50  0001 C CNN "Rating"
+F 6 "" H 2750 8600 50  0001 C CNN "PartNumber"
+	1    2750 8600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2425 8600 2600 8600
+Wire Wire Line
+	2900 8600 3250 8600
+$Comp
+L Duet3:C_SMALL C?
+U 1 1 5D4F4A2F
+P 6800 4275
+AR Path="/50577A22/5EE94BEE/5D4F4A2F" Ref="C?"  Part="1" 
+AR Path="/50577A22/5D4F4A2F" Ref="C228"  Part="1" 
+F 0 "C228" H 6675 4475 50  0000 L CNN
+F 1 "1u" V 6850 4100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Wbry" H 6800 4275 60  0001 C CNN
+F 3 "GRM31CR6YA106KA12L" H 6800 4275 60  0001 C CNN
+F 4 "CL10A105KB8NNNC or equivalent" H 6800 4275 50  0001 C CNN "Part Number"
+F 5 "35V +" H 6800 4275 50  0001 C CNN "Rating"
+	1    6800 4275
+	1    0    0    -1  
+$EndComp
+Connection ~ 6800 4175
+Wire Wire Line
+	6250 4175 6800 4175
+Wire Wire Line
+	6800 4375 6800 5875
+Wire Wire Line
+	6800 5875 6450 5875
+Connection ~ 6450 5875
+Wire Wire Line
+	6100 3100 7000 3100
+Connection ~ 8650 2225
+Wire Wire Line
+	8650 2225 8650 2025
+Wire Wire Line
+	8650 2225 8950 2225
+Connection ~ 8950 2225
+Wire Wire Line
+	8950 2225 8950 2400
+Wire Wire Line
+	8950 2225 9225 2225
+Wire Wire Line
+	9225 2225 9225 1900
+Wire Wire Line
+	6400 1500 7000 1500
+Wire Wire Line
+	5825 2225 8650 2225
+Wire Wire Line
+	2175 4725 2175 5875
+Wire Wire Line
+	2575 4925 2575 4775
+Connection ~ 2575 4775
+Wire Wire Line
+	2575 4625 2575 4125
+Wire Wire Line
+	2575 4775 2575 4625
+Connection ~ 2575 4625
+$Comp
+L Duet3:TS30042 U?
+U 1 1 5EEA4D08
+P 3425 4925
+AR Path="/50577A22/5EE94BEE/5EEA4D08" Ref="U?"  Part="1" 
+AR Path="/50577A22/5EEA4D08" Ref="U14"  Part="1" 
+F 0 "U14" H 3425 5125 70  0000 C CNN
+F 1 "TS30041" H 3425 4975 70  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.8x1.8mm" H 3425 4925 60  0001 C CNN
+F 3 "" H 3425 4925 60  0000 C CNN
+F 4 "TS30041-M000QFNR" H 3100 5525 50  0000 C CNN "Part Number"
+F 5 "Adj (set to 12V) 1A" H 3425 4925 50  0001 C CNN "Rating"
+	1    3425 4925
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2575 5075
+Wire Wire Line
+	4675 1575 4675 1100
+Wire Wire Line
+	3250 1100 4675 1100
+Connection ~ 2375 4125
+Wire Wire Line
+	2375 4125 2575 4125
+Text Label 2575 4475 0    20   ~ 0
+12V_VCC
+$Comp
+L Duet3:L_MINI L?
+U 1 1 5DCF1AB6
+P 1650 4125
+AR Path="/5FE30E62/5DCF1AB6" Ref="L?"  Part="1" 
+AR Path="/50577A22/5DCF1AB6" Ref="L2"  Part="1" 
+F 0 "L2" H 1575 4075 30  0000 C CNN
+F 1 "1uH" H 1650 4175 22  0000 C CNN
+F 2 "Inductor_SMD:L_1008_2512Metric" H 1650 4125 60  0001 C CNN
+F 3 "SRN2512-1R0M" H 1650 4025 60  0000 C CNN
+F 4 "3.5A" H 1675 4250 60  0000 C CNN "Rating"
+F 5 "." H 1650 4125 50  0001 C CNN "Part Number"
+	1    1650 4125
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1550 4125 1375 4125
+$Comp
+L Duet3:C_POL C?
+U 1 1 5DCF3722
+P 1925 4275
+AR Path="/5FE30E62/5DCF3722" Ref="C?"  Part="1" 
+AR Path="/50577A22/5DCF3722" Ref="C146"  Part="1" 
+F 0 "C146" H 1775 4375 50  0000 L CNN
+F 1 "100u 40V" V 1850 3850 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 1925 4275 60  0001 C CNN
+F 3 "e.g EEEFT1V101AP" H 1925 4275 60  0001 C CNN
+F 4 "." H 1925 4275 50  0001 C CNN "Part Number"
+	1    1925 4275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1925 4125 1925 4175
+Connection ~ 1925 4125
+Wire Wire Line
+	1925 4125 1750 4125
+Wire Wire Line
+	2175 4375 2175 4725
+Wire Wire Line
+	2175 4725 1925 4725
+Wire Wire Line
+	1925 4725 1925 4375
+Wire Wire Line
+	2050 825  2000 825 
+$Comp
+L Duet3:L_MINI L?
+U 1 1 5D9A9EB7
+P 7500 1500
+AR Path="/5FE30E62/5D9A9EB7" Ref="L?"  Part="1" 
+AR Path="/50577A22/5D9A9EB7" Ref="L4"  Part="1" 
+F 0 "L4" H 7425 1450 30  0000 C CNN
+F 1 "80 Ohms @ 100MHz" H 7500 1550 22  0000 C CNN
+F 2 "Inductor_SMD:L_1206_3216Metric" H 7500 1500 60  0001 C CNN
+F 3 "" H 7500 1400 60  0001 C CNN
+F 4 "" H 7525 1625 60  0001 C CNN "Rating"
+F 5 "BBUP00321611800Y00 " H 7500 1500 50  0001 C CNN "Part Number"
+	1    7500 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D_Zener_Small D62
+U 1 1 7FFE0FE9
+P 3200 2850
+F 0 "D62" V 3246 2782 50  0000 R CNN
+F 1 " MM3Z4V7ST1G" V 3150 2750 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323-Onsemi" H 3200 2963 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/MM3Z2V4ST1-D.PDF" V 3200 2850 50  0001 C CNN
+F 4 "" H 3200 2850 50  0001 C CNN "PartNumber"
+F 5 " MM3Z4V7ST1G" H 3200 2850 50  0001 C CNN "Part Number"
+	1    3200 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1775 3100 3200 3100
+Wire Wire Line
+	3200 2950 3200 3100
+Connection ~ 3200 3100
+Wire Wire Line
+	3200 3100 3350 3100
+Wire Wire Line
+	3200 2750 3200 2300
+$Comp
+L Device:D_Zener_Small D63
+U 1 1 800A5412
+P 8950 1850
+F 0 "D63" V 9050 2000 50  0000 R CNN
+F 1 " MM3Z4V7ST1G" H 9250 1800 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323-Onsemi" H 8950 1963 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/MM3Z2V4ST1-D.PDF" V 8950 1850 50  0001 C CNN
+F 4 "" H 8950 1850 50  0001 C CNN "PartNumber"
+F 5 " MM3Z4V7ST1G" H 8950 1850 50  0001 C CNN "Part Number"
+	1    8950 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8950 1950 8950 2225
+Wire Wire Line
+	8950 1500 8950 1750
+Connection ~ 8650 1200
+$Comp
+L Device:Polyfuse_Small F3
+U 1 1 8013CA5D
+P 8400 1200
+F 0 "F3" V 8300 1200 50  0000 C CNN
+F 1 "PTC_3A" V 8500 1200 50  0000 C CNN
+F 2 "Fuse:Fuse_1812_4532Metric" H 8450 1000 50  0001 L CNN
+F 3 "https://www.belfuse.com/resources/datasheets/circuitprotection/ds-cp-0zcg-series.pdf" H 8400 1200 50  0001 C CNN
+F 4 " 0ZCG0300FF2B" H 8400 1200 50  0001 C CNN "Part Number"
+	1    8400 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8300 1200 8200 1200
+$EndSCHEMATC
