@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Duet3_MB-cache
 EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
@@ -7199,7 +7198,7 @@ NoConn ~ 16675 8575
 Wire Wire Line
 	20275 7275 20275 7400
 $Comp
-L Diode:BAT40V D39
+L Duet3:BAT40V D39
 U 1 1 5E98FD6D
 P 5250 2475
 F 0 "D39" H 5250 2600 50  0000 C CNN
@@ -7210,7 +7209,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 5250 2475 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D39
+L Duet3:BAT40V D39
 U 2 1 5E993A35
 P 5225 1925
 F 0 "D39" H 5225 2050 50  0000 C CNN
@@ -8557,7 +8556,7 @@ Wire Wire Line
 Wire Wire Line
 	19725 1800 20200 1800
 $Comp
-L Diode:BAT40V D38
+L Duet3:BAT40V D38
 U 1 1 643EC1A3
 P 5225 1575
 F 0 "D38" H 5225 1700 50  0000 C CNN
@@ -8568,7 +8567,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 5225 1575 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D38
+L Duet3:BAT40V D38
 U 2 1 643EC1AD
 P 5250 2825
 F 0 "D38" H 5250 2950 50  0000 C CNN
@@ -8579,7 +8578,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 5250 2825 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D41
+L Duet3:BAT40V D41
 U 1 1 64F6E79A
 P 5275 3825
 F 0 "D41" H 5275 3950 50  0000 C CNN
@@ -8590,7 +8589,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 5275 3825 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D40
+L Duet3:BAT40V D40
 U 2 1 64F6E7A4
 P 5275 4150
 F 0 "D40" H 5275 4275 50  0000 C CNN
@@ -8601,7 +8600,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 5275 4150 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D40
+L Duet3:BAT40V D40
 U 1 1 64F6E7AE
 P 5250 3050
 F 0 "D40" H 5250 3175 50  0000 C CNN
@@ -8612,7 +8611,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 5250 3050 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D41
+L Duet3:BAT40V D41
 U 2 1 64F6E7B8
 P 5250 3350
 F 0 "D41" H 5250 3475 50  0000 C CNN
@@ -8897,7 +8896,7 @@ Connection ~ 4300 1950
 Wire Wire Line
 	4300 1950 4375 1950
 $Comp
-L Diode:BAT40V D43
+L Duet3:BAT40V D43
 U 1 1 6C4FEF62
 P 12475 2475
 F 0 "D43" H 12475 2600 50  0000 C CNN
@@ -8908,7 +8907,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 12475 2475 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D42
+L Duet3:BAT40V D42
 U 2 1 6C4FEF6C
 P 12475 2800
 F 0 "D42" H 12475 2925 50  0000 C CNN
@@ -8919,7 +8918,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 12475 2800 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D42
+L Duet3:BAT40V D42
 U 1 1 6C4FEF7F
 P 12450 1575
 F 0 "D42" H 12450 1700 50  0000 C CNN
@@ -8930,7 +8929,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 12450 1575 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D43
+L Duet3:BAT40V D43
 U 2 1 6C4FEF89
 P 12525 1925
 F 0 "D43" H 12525 2050 50  0000 C CNN
@@ -8941,7 +8940,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 12525 1925 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D45
+L Duet3:BAT40V D45
 U 1 1 6C4FEF93
 P 12500 3825
 F 0 "D45" H 12500 3950 50  0000 C CNN
@@ -8952,7 +8951,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 12500 3825 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D45
+L Duet3:BAT40V D45
 U 2 1 6C4FEF9D
 P 12475 3325
 F 0 "D45" H 12475 3450 50  0000 C CNN
@@ -8963,7 +8962,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 12475 3325 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D44
+L Duet3:BAT40V D44
 U 1 1 6C4FEFA7
 P 12475 3050
 F 0 "D44" H 12475 3175 50  0000 C CNN
@@ -8974,7 +8973,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 12475 3050 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D44
+L Duet3:BAT40V D44
 U 2 1 6C4FEFB1
 P 12525 4150
 F 0 "D44" H 12525 4275 50  0000 C CNN
@@ -8985,7 +8984,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 12525 4150 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D51
+L Duet3:BAT40V D51
 U 1 1 6CD10CD8
 P 5100 7400
 F 0 "D51" H 5100 7525 50  0000 C CNN
@@ -8996,7 +8995,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 5100 7400 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D50
+L Duet3:BAT40V D50
 U 2 1 6CD10CE2
 P 5100 7725
 F 0 "D50" H 5100 7850 50  0000 C CNN
@@ -9007,7 +9006,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 5100 7725 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D50
+L Duet3:BAT40V D50
 U 1 1 6CD10CEC
 P 5075 6500
 F 0 "D50" H 5075 6625 50  0000 C CNN
@@ -9018,7 +9017,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 5075 6500 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D51
+L Duet3:BAT40V D51
 U 2 1 6CD10CF6
 P 5075 6850
 F 0 "D51" H 5075 6975 50  0000 C CNN
@@ -9029,7 +9028,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 5075 6850 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D53
+L Duet3:BAT40V D53
 U 1 1 6CD10D00
 P 5125 8750
 F 0 "D53" H 5125 8875 50  0000 C CNN
@@ -9040,7 +9039,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 5125 8750 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D53
+L Duet3:BAT40V D53
 U 2 1 6CD10D0A
 P 5075 8250
 F 0 "D53" H 5075 8375 50  0000 C CNN
@@ -9051,7 +9050,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 5075 8250 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D52
+L Duet3:BAT40V D52
 U 1 1 6CD10D14
 P 5100 7975
 F 0 "D52" H 5100 8100 50  0000 C CNN
@@ -9062,7 +9061,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 5100 7975 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D52
+L Duet3:BAT40V D52
 U 2 1 6CD10D1E
 P 5125 9075
 F 0 "D52" H 5125 9200 50  0000 C CNN
@@ -9073,7 +9072,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 5125 9075 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D55
+L Duet3:BAT40V D55
 U 1 1 6CFAF296
 P 12525 7400
 F 0 "D55" H 12525 7525 50  0000 C CNN
@@ -9084,7 +9083,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 12525 7400 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D54
+L Duet3:BAT40V D54
 U 2 1 6CFAF2A0
 P 12525 7725
 F 0 "D54" H 12525 7850 50  0000 C CNN
@@ -9095,7 +9094,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 12525 7725 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D54
+L Duet3:BAT40V D54
 U 1 1 6CFAF2AA
 P 12500 6500
 F 0 "D54" H 12500 6625 50  0000 C CNN
@@ -9106,7 +9105,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 12500 6500 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D55
+L Duet3:BAT40V D55
 U 2 1 6CFAF2B4
 P 12500 6850
 F 0 "D55" H 12500 6975 50  0000 C CNN
@@ -9117,7 +9116,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 12500 6850 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D57
+L Duet3:BAT40V D57
 U 1 1 6CFAF2BE
 P 12550 8750
 F 0 "D57" H 12550 8875 50  0000 C CNN
@@ -9128,7 +9127,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 12550 8750 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D57
+L Duet3:BAT40V D57
 U 2 1 6CFAF2C8
 P 12525 8250
 F 0 "D57" H 12525 8375 50  0000 C CNN
@@ -9139,7 +9138,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 12525 8250 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D56
+L Duet3:BAT40V D56
 U 1 1 6CFAF2D2
 P 12525 7975
 F 0 "D56" H 12525 8100 50  0000 C CNN
@@ -9150,7 +9149,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 12525 7975 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D56
+L Duet3:BAT40V D56
 U 2 1 6CFAF2DC
 P 12550 9075
 F 0 "D56" H 12550 9200 50  0000 C CNN
@@ -9161,7 +9160,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 12550 9075 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D59
+L Duet3:BAT40V D59
 U 1 1 6CFAF2E6
 P 19925 7400
 F 0 "D59" H 19925 7525 50  0000 C CNN
@@ -9172,7 +9171,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 19925 7400 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D58
+L Duet3:BAT40V D58
 U 2 1 6CFAF2F0
 P 19925 7725
 F 0 "D58" H 19925 7850 50  0000 C CNN
@@ -9183,7 +9182,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 19925 7725 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D58
+L Duet3:BAT40V D58
 U 1 1 6CFAF2FA
 P 19900 6500
 F 0 "D58" H 19900 6625 50  0000 C CNN
@@ -9194,7 +9193,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 19900 6500 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D59
+L Duet3:BAT40V D59
 U 2 1 6CFAF304
 P 19900 6850
 F 0 "D59" H 19900 6975 50  0000 C CNN
@@ -9205,7 +9204,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 19900 6850 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D61
+L Duet3:BAT40V D61
 U 1 1 6CFAF30E
 P 19950 8750
 F 0 "D61" H 19950 8875 50  0000 C CNN
@@ -9216,7 +9215,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 19950 8750 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D61
+L Duet3:BAT40V D61
 U 2 1 6CFAF318
 P 19925 8250
 F 0 "D61" H 19925 8375 50  0000 C CNN
@@ -9227,7 +9226,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 19925 8250 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D60
+L Duet3:BAT40V D60
 U 1 1 6CFAF322
 P 19925 7975
 F 0 "D60" H 19925 8100 50  0000 C CNN
@@ -9238,7 +9237,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 19925 7975 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D60
+L Duet3:BAT40V D60
 U 2 1 6CFAF32C
 P 19950 9075
 F 0 "D60" H 19950 9200 50  0000 C CNN
@@ -9249,7 +9248,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 19950 9075 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D48
+L Duet3:BAT40V D48
 U 2 1 6CA6C814
 P 19950 4150
 F 0 "D48" H 19950 4275 50  0000 C CNN
@@ -9260,7 +9259,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 19950 4150 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D48
+L Duet3:BAT40V D48
 U 1 1 6CA6C80A
 P 19925 3050
 F 0 "D48" H 19925 3175 50  0000 C CNN
@@ -9271,7 +9270,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 19925 3050 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D49
+L Duet3:BAT40V D49
 U 2 1 6CA6C800
 P 19900 3325
 F 0 "D49" H 19900 3450 50  0000 C CNN
@@ -9282,7 +9281,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 19900 3325 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D49
+L Duet3:BAT40V D49
 U 1 1 6CA6C7F6
 P 19950 3825
 F 0 "D49" H 19950 3950 50  0000 C CNN
@@ -9293,7 +9292,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 19950 3825 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D47
+L Duet3:BAT40V D47
 U 2 1 6CA6C7EC
 P 19900 1925
 F 0 "D47" H 19900 2050 50  0000 C CNN
@@ -9304,7 +9303,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 19900 1925 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D46
+L Duet3:BAT40V D46
 U 1 1 6CA6C7E2
 P 19900 1575
 F 0 "D46" H 19900 1700 50  0000 C CNN
@@ -9315,7 +9314,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 19900 1575 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D46
+L Duet3:BAT40V D46
 U 2 1 6CA6C7D8
 P 19925 2800
 F 0 "D46" H 19925 2925 50  0000 C CNN
@@ -9326,7 +9325,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds30533.pdf" H 19925 2800 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:BAT40V D47
+L Duet3:BAT40V D47
 U 1 1 6CA6C7CE
 P 19925 2475
 F 0 "D47" H 19925 2600 50  0000 C CNN
