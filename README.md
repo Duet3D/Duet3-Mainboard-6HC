@@ -1,10 +1,13 @@
 # Duet3-Mainboard-6HC
-The Duet 3 Mainboard 6XD is designed to allow interfacing with the most common external stepper and servo motor drivers using step and direction signals, with support for 6 external drivers. In addition it provides opto-isolated Input and Output connections for some of the GPIO functions to allow easier interfacing with PLC control systems.
 
-![Image of Duet 3 Mainboard 6XD](https://docs.duet3d.com/duet_boards/duet_3_mb6xd/mb6xd_5_small.png)
+The Duet 3 Mainboard 6HC is a next generation controller board that builds on Duet3D's experience in developing the most flexible 3d printer control solutions. It is the core of the Duet 3 family which provides control for a wide range of machines including 3d printers, CNCs, lasercutters and more. 
 
-Product page is here: https://www.duet3d.com/duet3mainboard6xd
+![Image of Duet 3 Mainboard 6HC](https://docs.duet3d.com/duet_boards/duet_3_mb6hc/duet_3_mb6hc_v0.6_top.jpg)
 
-Documentation is here: https://docs.duet3d.com/Duet3D_hardware/Duet_3_family/Duet_3_Mainboard_6XD_Hardware_Overview
+Product page is here: https://www.duet3d.com/Duet3Mainboard6HC
+
+Documentation is here: https://docs.duet3d.com/Duet3D_hardware/Duet_3_family/Duet_3_Mainboard_6HC_Hardware_Overview
 
 As always please discuss this on the Duet3d forum: https://forum.duet3d.com/
+
+
